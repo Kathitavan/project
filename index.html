@@ -1,159 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advanced Home Section</title>
-  <!-- Bootstrap CSS -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Description of your website">
+  <meta name="keywords" content="HTML, CSS, Bootstrap, Web Development, Website Design">
+  <meta name="author" content="Kathiravan">
+  <meta property="og:title" content="Advanced Home Section">
+  <meta property="og:description" content="Description of your website for social media sharing">
+  <meta property="og:image" content="URL-to-image.jpg">
+  <meta property="og:url" content="https://www.yoursite.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Title of the webpage -->
+  <title>Shehara's Portfolio</title>
+
+  <!-- Favicon (Optional but recommended for branding) -->
+  <link rel="icon" href="https://img.icons8.com/?size=100&id=J3nZHWgT1e7m&format=png&color=000000" type="image/x-icon">
+
+  <!-- Bootstrap CSS for styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
+
+  <!-- Custom CSS for additional styles -->
   <link rel="stylesheet" href="ind.css">
+
+  <!-- Google Fonts for custom typography -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Additional External Libraries (if needed) -->
+  <link rel="stylesheet" href="path/to/other/library.css">
+
+  <!-- JavaScript for functionality (optional, but good for performance) -->
+  <script src="path/to/your/javascript.js" defer></script>
+
+  <!-- Optional: Link for web fonts or additional style sheets -->
+  <link rel="stylesheet" href="path/to/your/styles.css">
+
+  <!-- SEO Tags for search engines -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.yoursite.com">
+
+  <!-- Open Graph and Twitter Cards for social media -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Your Website Name">
 </head>
 
 
+
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top advanced-navbar">
-  <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/img.jpg" alt="Logo" class="logo me-2">
-      <span class="brand-name">Shehara's Portfolio</span>
-    </a>
-    <!-- Toggle Button for Mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Navbar Links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#work">My Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skill">My Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#journey">My Journey</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Me</a>
-        </li>
-      </ul>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top advanced-navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/img.jpg" alt="Logo" class="logo me-2">
+        <span class="brand-name">Shehara's Portfolio</span>
+      </a>
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">My Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#journey">My Journey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-
-<style>
-/* Advanced Navbar Styling */
-.advanced-navbar {
-  background: rgba(31, 31, 31, 0.9);
-  box-shadow: 0 8px 20px rgba(0, 255, 231, 0.3);
-  padding: 1rem 2rem;
-  transition: all 0.4s ease-in-out;
-  border-bottom: 2px solid rgba(0, 255, 231, 0.3);
-}
-
-.advanced-navbar.scrolled {
-  background: rgba(31, 31, 31, 0.7);
-  box-shadow: none;
-  padding: 0.7rem 2rem;
-  border-bottom: 1px solid rgba(0, 255, 231, 0.1);
-}
-
-.navbar-brand {
-  font-size: 1.3em;
-  color: #00ffe7;
-  text-transform: uppercase;
-  text-shadow: 0 0 15px rgba(0, 255, 231, 0.5);
-}
-
-.navbar-nav .nav-link {
-  color: #fff;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  display: block;
-  margin-top: 5px;
-  right: 0;
-  background: #00ffe7;
-  transition: width 0.3s ease, right 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover::after {
-  width: 100%;
-  right: 0;
-  left: auto;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #00ffe7;
-}
-
-/* Logo Styling */
-.logo {
-  height: 40px;
-  width: auto;
-  border: 2px solid #00ffe7;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 255, 231, 0.4);
-  transition: all 0.3s ease;
-}
-
-.logo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 15px rgba(0, 255, 231, 0.6);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar-nav {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  .nav-link {
-    padding: 0.5rem 0;
-  }
-}
-</style>
-
-<script>
-// Scroll Event Listener for Transparency
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".advanced-navbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
-</script>
+  </nav>
 
 
-
-
-
-
-
-
-
+  <script>
+    // Scroll Event Listener for Transparency
+    window.addEventListener("scroll", () => {
+      const navbar = document.querySelector(".advanced-navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
 
 
   <!-- Hero Section -->
@@ -166,22 +118,26 @@ window.addEventListener("scroll", () => {
           <h1>Shehara Banu Jamal</h1>
           <h2>And I'm a <span>Frontend Developer</span></h2>
           <p class="description">
-            I craft stunning, responsive, and user-centric web solutions. Bringing creativity and cutting-edge technology together, I build experiences that inspire.
+            I craft stunning, responsive, and user-centric web solutions. Bringing creativity and cutting-edge
+            technology together, I build experiences that inspire.
           </p>
           <div class="social-links d-flex justify-content-lg-start justify-content-center gap-3">
-            <a href="https://x.com/Shehara__jamal" target="_blank" class="btn btn-outline-light">
-                <i class="bi bi-twitter"></i>
-                
-             
+            <a href="https://x.com/Shehara_" target="_blank" class="btn btn-outline-light">
+              <i class="bi bi-twitter"></i>
+
+
             </a>
             <a href="https://www.linkedin.com/in/shehara-banu-jamal" target="_blank" class="btn btn-outline-light">
               <i class="bi bi-linkedin"></i>
             </a>
-            <a href="https://www.instagram.com/sharu_jamal_" target="_blank" class="btn btn-outline-light">
+            <a href="https://www.instagram.com/sharu_jamal_?igsh=MW5tdXZpZW44aHJhdA==" target="_blank"
+              class="btn btn-outline-light">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
-          <button class="btn btn-primary mt-4 download-btn">Download Resume</button>
+          <a href="https://drive.google.com/file/d/1WgT4ibyzMJgWFvNmAvfEI9yE36gX9fP3/view?usp=sharing"
+            class="btn btn-primary mt-4 download-btn" target="_blank">Download Resume</a>
+
         </div>
 
         <!-- Right Content -->
@@ -193,20 +149,22 @@ window.addEventListener("scroll", () => {
     </div>
   </section>
 
- <!-- About Section -->
-<section class="about-section" id="about">
+  <!-- About Section -->
+  <section class="about-section" id="about">
     <div class="about-container">
       <!-- Profile Image -->
       <div class="about-image">
         <div class="glow-box"></div>
         <img src="images/img2.jpg" alt="Profile">
       </div>
-  
+
       <!-- About Content -->
       <div class="about-content">
         <h2><span>Discover</span> About Me</h2>
         <p>
-          Hello! I'm <strong>Shehara Banu Jamal</strong>, a passionate Web Developer based in Dharmapuri, Tamil Nadu. I specialize in creating responsive, user-friendly designs and applications, seamlessly integrating technology with creativity.
+          Hello! I'm <strong>Shehara Banu Jamal</strong>, a passionate Web Developer based in Dharmapuri, Tamil Nadu. I
+          specialize in creating responsive, user-friendly designs and applications, seamlessly integrating technology
+          with creativity.
         </p>
         <div class="about-info">
           <div class="info-item"><strong>Name:</strong> Shehara Banu Jamal</div>
@@ -216,16 +174,19 @@ window.addEventListener("scroll", () => {
           <div class="info-item"><strong>Languages:</strong> English, Tamil, Urdu</div>
           <div class="info-item"><strong>Skills:</strong> HTML, CSS, JavaScript, Python, React</div>
         </div>
-        <button class="download-btn">Download Resume</button>
+        <a href="https://drive.google.com/file/d/1WgT4ibyzMJgWFvNmAvfEI9yE36gX9fP3/view?usp=sharing"
+          class="btn btn-primary mt-4 download-btn" target="_blank">Resume</a>
+
       </div>
     </div>
   </section>
-  
-<!-- Work Section -->
-<section class="work-section" id="work">
+
+  <!-- Work Section -->
+  <section class="work-section" id="work">
     <h2>My <span>Work</span></h2>
-    <p>Here are some of my design projects that showcase my skills and expertise. Click on a project to explore more details.</p>
-    
+    <p>Here are some of my design projects that showcase my skills and expertise. Click on a project to explore more
+      details.</p>
+
     <div class="work-container">
       <!-- Web Creations Category -->
       <div class="work-category">
@@ -251,7 +212,7 @@ window.addEventListener("scroll", () => {
           </div>
         </div>
       </div>
-  
+
       <!-- UI/UX Design Category -->
       <div class="work-category">
         <h3>UI/UX Design</h3>
@@ -279,85 +240,92 @@ window.addEventListener("scroll", () => {
     </div>
   </section>
 
-<!-- Skills Section -->
-    <section class="skills-section py-5" id="skill">
-      <div class="container">
-        <div class="row text-center">
-          <h2 class="section-title mb-4">MY SKILLS</h2>
+  <!-- Skills Section -->
+  <section class="skills-section py-5" id="skill">
+    <div class="container">
+      <div class="row text-center">
+        <h2 class="section-title mb-4">MY SKILLS</h2>
+      </div>
+      <div class="row">
+        <!-- Frontend Development -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="skill-card">
+            <h3>Frontend Development</h3>
+            <ul class="skill-list">
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML"
+                  class="icon">
+                HTML
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"
+                  class="icon">
+                CSS
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"
+                  class="icon">
+                JavaScript
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap"
+                  class="icon">
+                Bootstrap
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="icon">
+                React
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row">
-          <!-- Frontend Development -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="skill-card">
-              <h3>Frontend Development</h3>
-              <ul class="skill-list">
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" class="icon">
-                  HTML
-                </li>
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="icon">
-                  CSS
-                </li>
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="icon">
-                  JavaScript
-                </li>
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap" class="icon">
-                  Bootstrap
-                </li>
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="icon">
-                  React
-                </li>
-              </ul>
-            </div>
+        <!-- UI/UX Design -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="skill-card">
+            <h3>UI/UX Design</h3>
+            <ul class="skill-list">
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="icon">
+                Figma
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg" alt="Adobe XD"
+                  class="icon">
+                Adobe XD
+              </li>
+              <li>Wireframing, Prototyping, User Research</li>
+            </ul>
           </div>
-          <!-- UI/UX Design -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="skill-card">
-              <h3>UI/UX Design</h3>
-              <ul class="skill-list">
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="icon">
-                  Figma
-                </li>
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg" alt="Adobe XD" class="icon">
-                  Adobe XD
-                </li>
-                <li>Wireframing, Prototyping, User Research</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Other Skills -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="skill-card">
-              <h3>Other Skills</h3>
-              <ul class="skill-list">
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="icon">
-                  Python
-                </li>
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git" class="icon">
-                  Git
-                </li>
-                <li>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code" class="icon">
-                  VS Code
-                </li>
-                <li>Video and Photo Editing</li>
-              </ul>
-            </div>
+        </div>
+        <!-- Other Skills -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="skill-card">
+            <h3>Other Skills</h3>
+            <ul class="skill-list">
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"
+                  class="icon">
+                Python
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git" class="icon">
+                Git
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
+                  alt="VS Code" class="icon">
+                VS Code
+              </li>
+              <li>Video and Photo Editing</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-  
-<!-- Journey Section -->
-<section class="journey-section" id="journey">
+    </div>
+  </section>
+
+  <!-- Journey Section -->
+  <section class="journey-section" id="journey">
     <h2>My <span>Journey</span></h2>
     <div class="journey-container">
       <!-- Education Category -->
@@ -374,7 +342,7 @@ window.addEventListener("scroll", () => {
           <p>Graduated in 2020. Excelled in Math and Science streams.</p>
         </div>
       </div>
-  
+
       <!-- Experience Category -->
       <div class="journey-category">
         <h3>Experience</h3>
@@ -391,8 +359,8 @@ window.addEventListener("scroll", () => {
       </div>
     </div>
   </section>
-  
-<!-- Contact Section -->
+
+  <!-- Contact Section -->
   <section class="contact-section py-5" id="Contact Me">
     <div class="container">
       <div class="row text-center">
@@ -423,11 +391,14 @@ window.addEventListener("scroll", () => {
       </div>
       <div class="row text-center mt-5">
         <p class="social-text">Follow Me On:</p>
-        <div class="social-icons d-flex justify-content-center gap-3">
-          <a href="https://github.com/dashboard" class="social-link"><i class="bi bi-github"></i></a>
-          <a href="https://x.com/Shehara__jamal" class="social-link"><i class="bi bi-twitter"></i></a>
-          <a href="https://www.instagram.com/sharu_jamal_" class="social-link"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/shehara-banu-jamal" class="social-link"><i class="bi bi-linkedin"></i></a>
+        <div class="social-icons d-flex justify-content-center gap-3 mt-3">
+          <a href="https://x.com/Shehara_" class="social-link" target="_blank"><i class="bi bi-twitter"></i></a>
+          <a href="https://github.com/Sheharabanu-J" class="social-link" target="_blank"><i
+              class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/shehara-banu-jamal" class="social-link" target="_blank"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/sharu_jamal_?igsh=MW5tdXZpZW44aHJhdA==" class="social-link"
+            target="_blank"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -439,10 +410,12 @@ window.addEventListener("scroll", () => {
       <h4 class="footer-title">Shehara Banu Jamal</h4>
       <p class="footer-subtitle">Innovating the Web | Crafting Unique UI/UX Experiences</p>
       <div class="social-icons d-flex justify-content-center gap-3 mt-3">
-        <a href="https://x.com/Shehara__jamal" class="social-link"><i class="bi bi-twitter"></i></a>
-        <a href="https://github.com/dashboard" class="social-link"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/shehara-banu-jamal" class="social-link"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/sharu_jamal_" class="social-link"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/Shehara_" class="social-link" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://github.com/Sheharabanu-J" class="social-link" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/shehara-banu-jamal" class="social-link" target="_blank"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/sharu_jamal_?igsh=MW5tdXZpZW44aHJhdA==" class="social-link"
+          target="_blank"><i class="bi bi-instagram"></i></a>
       </div>
       <div class="footer-links mt-4">
         <a href="#home" class="footer-link">Home</a>
@@ -453,18 +426,22 @@ window.addEventListener("scroll", () => {
       </div>
       <div class="newsletter mt-4">
         <form class="d-flex justify-content-center">
-          <input type="email" class="form-control newsletter-input" placeholder="Your Email">
+          <input type="email" class="form-control newsletter-input" placeholder="Your Email" required>
           <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
         </form>
       </div>
-      <p class="footer-note mt-4">© 2025 Shehara Banu Jamal. All Rights Reserved. Designed with 💜 by Shehara Banu Jamal</p>
+      <p class="footer-note mt-4">© 2025 Shehara Banu Jamal. All Rights Reserved. Designed with 💜 by Shehara Banu Jamal
+      </p>
     </div>
   </footer>
 
- 
+
+
+
 
   <!-- Bootstrap JS -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
