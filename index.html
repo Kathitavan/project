@@ -15,12 +15,12 @@
 
 
 <body>
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top advanced-navbar">
   <div class="container">
     <!-- Logo -->
-    <a class="navbar-brand" href="#">
-      <img src="images/img.jpg" alt="Logo" class="logo">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/img.jpg" alt="Logo" class="logo me-2">
       <span class="brand-name">Shehara's Portfolio</span>
     </a>
     <!-- Toggle Button for Mobile -->
@@ -46,12 +46,116 @@
           <a class="nav-link" href="#journey">My Journey</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Contact Me">Contact Me</a>
+          <a class="nav-link" href="#contact">Contact Me</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<style>
+/* Advanced Navbar Styling */
+.advanced-navbar {
+  background: rgba(31, 31, 31, 0.9);
+  box-shadow: 0 8px 20px rgba(0, 255, 231, 0.3);
+  padding: 1rem 2rem;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 2px solid rgba(0, 255, 231, 0.3);
+}
+
+.advanced-navbar.scrolled {
+  background: rgba(31, 31, 31, 0.7);
+  box-shadow: none;
+  padding: 0.7rem 2rem;
+  border-bottom: 1px solid rgba(0, 255, 231, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.3em;
+  color: #00ffe7;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(0, 255, 231, 0.5);
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #00ffe7;
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00ffe7;
+}
+
+/* Logo Styling */
+.logo {
+  height: 40px;
+  width: auto;
+  border: 2px solid #00ffe7;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 255, 231, 0.4);
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 255, 231, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .nav-link {
+    padding: 0.5rem 0;
+  }
+}
+</style>
+
+<script>
+// Scroll Event Listener for Transparency
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".advanced-navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
   <!-- Hero Section -->
   <section class="hero-section" id="home">
     <div class="container">
